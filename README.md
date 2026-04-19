@@ -38,7 +38,7 @@ SELECT product_name,
         WHEN price > 1000 THEN 'Expensive'
         WHEN price BETWEEN 100 AND 1000 THEN 'Mid-range'
         ELSE 'Budget'
-    [span_23](start_span)END AS price_category -- Always end with END and an optional alias[span_23](end_span)
+    END AS price_category 
 FROM products;
 
 ```
